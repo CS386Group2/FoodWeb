@@ -156,6 +156,22 @@
         - “When I would post my recipes on Instagram,  it was hard to make all the information needed for the recipes clear without using video.”
     - Assessment: *Must Have*
 
+9. Interviewee: Tessa Kissick (Artist)
+    - Interviewer: Zach DeHaven
+    - When: September 15th; 7:00pm
+    - Consumer Segment:
+        - Age: 20
+        - Interest: art and eating healthy
+        - Where they find recipes: family members
+        - Daily Activities: work, school
+    - Key Insights:
+        - Usually sticks to recipes she already knows and likes
+        - Writes down a plan for meals
+        - Would like a searchable list of recipes
+    - Representative Quotes:
+        - "I usually just write them down but I think it would be cool to have a searchable one where you input the name and it pops out the ingredients"
+    - Assessment: *Nice to Have*
+
 ## Final Value Proposition and Consumer Segments:
     Value proposition: A convenient way to find, organize and share recipes.
     Consumer segment: People who want a planned and organized approach to recipe usage
