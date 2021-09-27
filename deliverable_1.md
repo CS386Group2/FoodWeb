@@ -1,5 +1,11 @@
 # Deliverable 1: Inception
 
+*Group 2 - foodWeb*
+
+*Date: September 19th, 2020*
+
+*Group Members: Zach DeHaven, Ethan Green, Tyler Lockwood, Nazhem Jones, Eduardo Martinez, Dylan Anderson*
+
 ## Introduction
 
     foodWeb is an app designed to streamline the sharing and organizing of recipes for cooks, chefs, fitness enthusiasts, and food heads. We plan to make working with recipes simpler in every aspect. Often when you search for a recipe in google you are met with articles and ad walls that have nothing to do with the recipe you need. We will connect people via our app in order to turn using recipes into a more convenient and social experience.
@@ -110,7 +116,7 @@
     - Assessment: *Nice to Have*
 
 6. Interviewee: Faith Wills (Psychology)
-    - Interviewer : Dylan Anderson
+    - Interviewer: Dylan Anderson
     - When: September 16th; 12:17pm 
     - Consumer Segment:
         - Age: 19
