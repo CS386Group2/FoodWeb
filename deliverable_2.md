@@ -334,3 +334,18 @@ Date: | 09/23/2021
 
 #####
 ![Save Recipe Sketch](Sketches%20&%20Diagrams\sketch_save_recipe.jpg)
+
+### User Stories
+    User Story 1: As a member, I want to post a recipe so that others can see and share
+    User Story 2: As a member, I want to see a library of my recipes so that I can go back and edit them. 
+    User Story 3: As a user, I want to delete my account because I no longer need an account. (Priory LVL 2; Approximately 5 hours)
+    User Story 4: As an admin, I want to flag a recipe because it is incomplete. (Priory LVL 5; Approximately 3 hours)  
+    User Story 5: As a member, I want to keep track of my ingredients so I know what recipes I can make, or what I need to buy. ()
+    User Story 6: As a member, I want to create an account so I can access my recipes and information from any device. (Priority LVL 1; APPROX. 4 HOURS)
+    User Story 7: As a user, I want to search for recipes so that I may use and save them. (Priority LVL 2; APPROX. 4 HOURS)
+    User Story 8: As a user, I want the ability to search for recipes using ingredients, so that I may make food using what I already have.
+    (Priority LVL 5; APPROX. 2 HOURS)
+    User Story 9: As a user I want to save recipes so that I am able to easily access it later. (Priority LVL3; APPROX. 5 HOURS)
+    User Story 10: As a user I would like to view and sort my saved recipes so I can organize them to best help me. (priority LVL 3; APPROX. 5 hours)
+    User Story 11: As a member, I would like to be able to modify the ingredients in my recipes
+    User Story 12: As a user, I would like to be able to modify the ingredients in recipes I have saved
