@@ -1,3 +1,9 @@
+*Group 2: foodWeb*
+
+*Nazhem Jones, Zach DeHaven, Tyler Lockwood, Ethan Green, Dylan Anderson, Eduardo Martinez*
+
+*Deliverable 2: Requirements*
+
 ## 1. Positioning
 
 ### 1.1 Problem statement
@@ -94,7 +100,7 @@
     5. System will not get confirmation, and the use case resumes at basic flow 3
 
 ##### Use Case Sketch
-![Remove Account](Sketches%20&%20Diagrams\sketch_remove_account.jpg)
+![Remove Account](Sketches&Diagrams\sketch_remove_account.jpg)
 
 #### 2. Publish Recipes
 
@@ -158,7 +164,7 @@ Date | 09/27/2021
     * The recipe is published and can be accessed by other users
 
 ##### Use Case Sketch
-![Publish Recipes Sketch](Sketches%20&%20Diagrams\sketch_publish_recipe.jpg)
+![Publish Recipes Sketch](Sketches&Diagrams\sketch_publish_recipe.jpg)
 
 #### 3. Create Account
 
@@ -213,7 +219,7 @@ The user creates an account with a username and password, to hold their personal
 
 ##### Use Case Sketch
 
-![Create Account Sketch](Sketches%20&%20Diagrams\sketch_create_account.jpg)
+![Create Account Sketch](Sketches&Diagrams\sketch_create_account.jpg)
 
 #### 4. Search for Recipes
 
@@ -262,7 +268,7 @@ Date: | 09/25/2021
     * The user finds a recipe to use now or save.
 
 ##### User Case Sketch
-![Search for Recipes Sketch](Sketches%20&%20Diagrams\sketch_search_recipes.jpg)
+![Search for Recipes Sketch](Sketches&Diagrams\sketch_search_recipes.jpg)
 
 #### 5. Manage Ingredients
 
@@ -302,7 +308,7 @@ Date: | 09/23/2021
     * The ingredient is added, removed, or changed
 
 ##### Use Case Sketch
-![Publish Recipes Sketch](Sketches%20&%20Diagrams\sketch_manage_ingredients.jpg)
+![Publish Recipes Sketch](Sketches&Diagrams\sketch_manage_ingredients.jpg)
 
 #### 6. Save Recipes
 
@@ -333,7 +339,7 @@ Date: | 09/23/2021
     * The recipe is stored on the user's account
 
 #####
-![Save Recipe Sketch](Sketches%20&%20Diagrams\sketch_save_recipe.jpg)
+![Save Recipe Sketch](Sketches&Diagrams\sketch_save_recipe.jpg)
 
 ### User Stories
     User Story 1: As a member, I want to post a recipe so that others can see and share
