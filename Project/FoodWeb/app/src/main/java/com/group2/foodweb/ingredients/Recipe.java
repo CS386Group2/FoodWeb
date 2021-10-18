@@ -4,7 +4,7 @@ package com.group2.foodweb.ingredients;
  * Created by Zach on 9/30/2021.
  */
 
-public class IngredientList {
+public class Recipe {
 
     private final int INGREDIENT_NOT_FOUND = -999;
     private final int DEFAULT_LIST_SIZE = 128;
@@ -12,15 +12,18 @@ public class IngredientList {
     private Ingredient[] ingredients;
     private int ingredientListSize;
 
+    public String title;
+    public String description;
+    public String author;
+
     // Default constructor
-    public IngredientList()
+    public Recipe()
     {
         ingredientListSize = DEFAULT_LIST_SIZE;
         ingredients = new Ingredient[ ingredientListSize ];
     }
-
     // Copy constructor
-    public IngredientList( IngredientList copy )
+    public Recipe(Recipe copy )
     {
         int index;
 

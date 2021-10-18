@@ -11,7 +11,7 @@ public class Ingredient
     private final int NEEDED = 202;
 
     // used for display and hash creation
-    // should only be changed by IngredientList to avoid issues with hashing
+    // should only be changed by Recipe to avoid issues with hashing
     public String ingredientName;
 
     // ingredient storage

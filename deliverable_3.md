@@ -1,3 +1,9 @@
+*Group 2: FoodWeb*
+
+*Deliverable 3: Analysis*
+
+*Nazhem Jones, Zachary DeHaven, Tyler Lockwood, Dylan Anderson, Ethan Green, Eduardo Martinez*
+
 ## System Description
 
 The system we are developing is an app, called “foodWeb”, which will simplify searching and sharing recipes. 
