@@ -1,29 +1,27 @@
-package com.group2.foodweb.ingredients;
+package com.group2.foodweb.recipes;
 
 /**
- * Created by Zach on 9/30/2021.
+ * Created by Zach on 10/19/2021.
  */
 
-public class Recipe {
-
+public class IngredientList {
     private final int INGREDIENT_NOT_FOUND = -999;
     private final int DEFAULT_LIST_SIZE = 128;
 
     private Ingredient[] ingredients;
     private int ingredientListSize;
 
-    public String title;
-    public String description;
-    public String author;
+    public String name;
+    public double amount;
 
     // Default constructor
-    public Recipe()
+    public IngredientList()
     {
         ingredientListSize = DEFAULT_LIST_SIZE;
         ingredients = new Ingredient[ ingredientListSize ];
     }
     // Copy constructor
-    public Recipe(Recipe copy )
+    public IngredientList(IngredientList copy )
     {
         int index;
 
@@ -35,6 +33,8 @@ public class Recipe {
             ingredients[ index ] = copy.ingredients[ index ];
         }
     }
+
+    // TODO: initialization constructor
 
     public void addIngredient( Ingredient newIngredient )
     {
