@@ -1,4 +1,4 @@
-package com.group2.foodweb.ingredients;
+package com.group2.foodweb.recipes;
 
 /**
  * Created by Zach on 9/30/2021.
