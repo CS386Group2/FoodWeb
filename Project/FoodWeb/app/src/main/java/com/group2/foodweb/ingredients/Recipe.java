@@ -14,7 +14,7 @@ public class Recipe {
 
     public String title;
     public String description;
-    public String author;
+    public group2.foodweb.User.User author;
 
     // Default constructor
     public Recipe()
