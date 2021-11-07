@@ -9,126 +9,49 @@ public class Recipe {
     private final int INGREDIENT_NOT_FOUND = -999;
     private final int DEFAULT_LIST_SIZE = 128;
 
-    private Ingredient[] ingredients;
-    private int ingredientListSize;
+    private IngredientList ingredients;
 
     public String title;
     public String description;
+    public String instructions;
     public String author;
 
     // Default constructor
     public Recipe()
     {
-        ingredientListSize = DEFAULT_LIST_SIZE;
-        ingredients = new Ingredient[ ingredientListSize ];
+        ingredients = new IngredientList();
     }
     // Copy constructor
     public Recipe(Recipe copy )
     {
-        int index;
+        ingredients = new IngredientList(copy.ingredients);
 
-        ingredientListSize = copy.ingredientListSize;
-        ingredients = new Ingredient[ ingredientListSize ];
+        title = copy.title;
+        description = copy.description;
+        instructions = copy.instructions;
+        author = copy.author;
 
-        for ( index = 0; index < ingredientListSize; index++ )
-        {
-            ingredients[ index ] = copy.ingredients[ index ];
-        }
     }
 
-    // TODO: initialization constructor
+    // Initialization constructor
+    public Recipe(String recipeTitle, String recipeDescription, String recipeInstructions, IngredientList ingredientList )
+    {
+        title = recipeTitle;
+        description = recipeDescription;
+        instructions = recipeInstructions;
+        ingredients = ingredientList;
+    }
 
     public void addIngredient( Ingredient newIngredient )
     {
-        int insertIndex, attempts = 0;
-
-        insertIndex = generateHash( newIngredient );
-
-        if ( ingredients[ insertIndex ] != null )
-        {
-            while ( ingredients[ insertIndex ] != null && attempts < ingredientListSize )
-            {
-                attempts++;
-
-                // TODO: Resize (if deemed necessary)
-
-                // increment index w/ quadratic, keep within bounds
-                insertIndex += Math.pow( attempts, 2 );
-                insertIndex %= ingredientListSize;
-
-            }
-        }
+        ingredients.addIngredient( newIngredient );
     }
 
-    public void removeIngredient( Ingredient toBeRemoved )
+    public void removeIngredient( String toBeRemoved )
     {
-        int removeIndex;
-
-        // get index of item
-        removeIndex = findIngredientIndex( toBeRemoved );
-
-        // check if item can be found
-        if ( removeIndex != INGREDIENT_NOT_FOUND )
-        {
-            // set value to null
-            ingredients[ removeIndex ] = null;
-
-        }
+        ingredients.removeIngredient( toBeRemoved );
     }
 
-    public void changeIngredientName( Ingredient ingredientToChange, String newName )
-    {
-        Ingredient changedIngredient;
 
-        changedIngredient = new Ingredient( ingredientToChange );
-        changedIngredient.ingredientName = newName;
-
-        removeIngredient( ingredientToChange );
-        addIngredient( changedIngredient );
-    }
-
-    private int findIngredientIndex( Ingredient ingredientToFind )
-    {
-        int itemIndex, attempts = 0;
-
-        itemIndex = generateHash( ingredientToFind );
-
-        // quadratic probing
-        // loop while item not found and not at end of list
-        while ( ingredients[ itemIndex ].ingredientName
-                .compareTo( ingredientToFind.ingredientName ) != 0
-                && attempts < ingredientListSize )
-        {
-            attempts++;
-
-            // reached end of bounds
-            if ( attempts == ingredientListSize )
-            {
-                return INGREDIENT_NOT_FOUND;
-            }
-
-            itemIndex += Math.pow( attempts, 2 );
-            itemIndex %= ingredientListSize;
-
-        }
-
-        return itemIndex;
-    }
-
-    private int generateHash( Ingredient ingredient )
-    {
-        int charIndex, hashIndex = 0;
-
-        // sum ASCII character values - Josh Bloch Recipe for hash codes
-        for ( charIndex = 0; charIndex < ingredient.ingredientName.length(); charIndex++ )
-        {
-            hashIndex += (int)ingredient.ingredientName.charAt( charIndex );
-        }
-
-        // convert to usable index
-        hashIndex %= ingredientListSize;
-
-        return hashIndex;
-    }
 
 }

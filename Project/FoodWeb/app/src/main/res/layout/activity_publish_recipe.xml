@@ -10,41 +10,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.group2.foodweb.recipes.PublishRecipe">
 
-    <Button
-        android:text="Button"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button_publish_recipe"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="131dp" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button_remove_ingredient" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_add_ingredient"
-        android:layout_alignBaseline="@+id/button_remove_ingredient"
-        android:layout_alignBottom="@+id/button_remove_ingredient"
+        android:inputType="textLongMessage"
+        android:text="Description"
+        android:ems="10"
+        android:id="@+id/field_description"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/field_recipe_name"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textLongMessage"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/field_description"
-        android:layout_marginTop="30dp"
+        android:id="@+id/field_instructions"
+        android:inputType="textLongMessage"
+        android:layout_marginTop="26dp"
         android:layout_below="@+id/field_recipe_name"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Publish Recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_publish_recipe"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Remove Ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_remove_ingredient"
+        android:layout_above="@+id/button_publish_recipe"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="64dp" />
+
+    <Button
+        android:text="Add Ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add_ingredient"
+        android:layout_alignBaseline="@+id/button_remove_ingredient"
+        android:layout_alignBottom="@+id/button_remove_ingredient"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -60,12 +71,13 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:inputType="textPersonName"
+        android:text="Ingredient Name"
         android:ems="10"
-        android:id="@+id/field_instructions"
-        android:layout_marginBottom="24dp"
-        android:inputType="textLongMessage"
-        android:layout_above="@+id/button_remove_ingredient"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/field_ingredient_name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button_remove_ingredient"
+        android:layout_alignEnd="@+id/button_add_ingredient" />
 
 </RelativeLayout>

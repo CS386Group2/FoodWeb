@@ -11,9 +11,6 @@ public class IngredientList {
     private Ingredient[] ingredients;
     private int ingredientListSize;
 
-    public String name;
-    public double amount;
-
     // Default constructor
     public IngredientList()
     {
@@ -33,8 +30,6 @@ public class IngredientList {
             ingredients[ index ] = copy.ingredients[ index ];
         }
     }
-
-    // TODO: initialization constructor
 
     public void addIngredient( Ingredient newIngredient )
     {
@@ -58,12 +53,24 @@ public class IngredientList {
         }
     }
 
-    public void removeIngredient( Ingredient toBeRemoved )
+    // Creates a new ingredient object to be added to the list
+    public void addIngredientFromButton(String name, double amount)
+    {
+        Ingredient newIngredient;
+
+        newIngredient = new Ingredient(name, amount);
+
+        addIngredient(newIngredient);
+
+    }
+
+    public void removeIngredient( String toBeRemoved )
     {
         int removeIndex;
+        Ingredient ingredientToRemove = new Ingredient(toBeRemoved, 0);
 
         // get index of item
-        removeIndex = findIngredientIndex( toBeRemoved );
+        removeIndex = findIngredientIndex( ingredientToRemove );
 
         // check if item can be found
         if ( removeIndex != INGREDIENT_NOT_FOUND )
@@ -74,6 +81,7 @@ public class IngredientList {
         }
     }
 
+    /**
     public void changeIngredientName( Ingredient ingredientToChange, String newName )
     {
         Ingredient changedIngredient;
@@ -84,7 +92,7 @@ public class IngredientList {
         removeIngredient( ingredientToChange );
         addIngredient( changedIngredient );
     }
-
+    **/
     private int findIngredientIndex( Ingredient ingredientToFind )
     {
         int itemIndex, attempts = 0;

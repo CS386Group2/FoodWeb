@@ -17,6 +17,9 @@ public class PublishRecipe extends AppCompatActivity implements View.OnClickList
     private String recipeName;
     private String description;
     private String instructions;
+    private String ingredientName;
+
+    double ingredientAmt;
 
     private IngredientList ingredientList;
 
@@ -42,6 +45,8 @@ public class PublishRecipe extends AppCompatActivity implements View.OnClickList
         button_removeIngredient.setOnClickListener(this);
         button_publishRecipe.setOnClickListener(this);
 
+        ingredientList = new IngredientList();
+
 
     }
 
@@ -50,9 +55,11 @@ public class PublishRecipe extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button_add_ingredient:
-                //ingredientList.addIngredient();
+                ingredientList.addIngredientFromButton(ingredientName, ingredientAmt);
+
             case R.id.button_remove_ingredient:
-                return;
+                ingredientList.removeIngredient(ingredientName);
+
             case R.id.button_publish_recipe:
                 createRecipe( recipeName, description, instructions, ingredientList );
 
@@ -81,7 +88,7 @@ public class PublishRecipe extends AppCompatActivity implements View.OnClickList
 
     private void createRecipe( String name, String description, String instructions, IngredientList ingredientList )
     {
-        Recipe newRecipe = new Recipe( );
+        Recipe newRecipe = new Recipe( name, description, instructions, ingredientList );
 
     }
 
